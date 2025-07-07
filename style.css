@@ -127,6 +127,12 @@ header {
   padding: 40px 20px;
   text-align: center;
 }
+header .mission-summary {
+  font-size: 1rem;
+  margin-top: 8px;
+  color: #e0e0e0;
+}
+
 
 section {
   padding: 40px 20px;
