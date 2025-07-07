@@ -218,3 +218,60 @@ footer a {
   font-style: italic;
   color: #ccc;
 }
+#insights {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+#insights h2 {
+  color: #003366;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.insight {
+  margin-bottom: 30px;
+  border-left: 4px solid #003366;
+  padding-left: 15px;
+}
+
+.insight h3 {
+  margin-top: 0;
+  color: #002244;
+}
+
+.insight p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.insight a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.insight a:hover {
+  text-decoration: underline;
+}
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ffcc00;
+  color: #003366;
+}
