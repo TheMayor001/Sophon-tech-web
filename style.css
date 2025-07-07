@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #002244;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar img.logo {
+  width: 60px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  color: white;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.top-bar nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top-bar nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.top-bar nav a:hover,
+.top-bar nav a.active {
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .top-bar {
+    flex-wrap: wrap;
+  }
+
+  .top-bar nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .top-bar nav.show {
+    display: flex;
+  }
+
+  .top-bar nav a {
+    margin: 5px 0;
+  }
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: -20px;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #003366;
+}
+
+section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366;
+  color: white;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #003366;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #003366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+#back-to-top:hover {
+  background: #ffcc00;
+  color: #003366;
+}
