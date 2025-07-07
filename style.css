@@ -19,8 +19,12 @@ body {
 }
 
 .top-bar img.logo {
-  width: 100px; /* or try 80px, 90px */
+  width: 80px;
   height: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -74,6 +78,20 @@ body {
   .top-bar nav a {
     margin: 5px 0;
   }
+  @media (max-width: 768px) {
+  .logo-text {
+    font-size: 0.9rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.75rem;
+  }
+}
+
 }
 
 header {
@@ -145,4 +163,25 @@ footer a {
 #back-to-top:hover {
   background: #ffcc00;
   color: #003366;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  color: white;
+  line-height: 1.2;
+}
+
+.company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #ccc;
 }
