@@ -79,16 +79,36 @@ body {
     margin: 5px 0;
   }
   @media (max-width: 768px) {
-  .logo-text {
-    font-size: 0.9rem;
+  .top-bar {
+    flex-wrap: nowrap; /* prevents wrapping */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .company-name {
-    font-size: 1rem;
+  .logo-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
   }
 
-  .tagline {
-    font-size: 0.75rem;
+  .menu-toggle {
+    display: block;
+  }
+
+  .top-bar nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .top-bar nav.show {
+    display: flex;
+  }
+
+  .top-bar nav a {
+    margin: 5px 0;
   }
 }
 
