@@ -53,6 +53,11 @@ body {
 .top-bar nav a.active {
   color: #ffcc00;
 }
+.top-bar nav a.active {
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 4px;
+}
+
 
 /* Mobile navigation */
 @media (max-width: 768px) {
