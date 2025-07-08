@@ -220,6 +220,15 @@ footer a {
   font-style: italic;
   color: #ccc;
 }
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link img.logo {
+  display: block;
+}
+
 
 /* Insights */
 #insights {
