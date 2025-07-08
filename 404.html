@@ -1,17 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Page Not Found | Sophon Tech</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found – Sophon Tech Solutions</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body { text-align: center; padding: 100px; font-family: sans-serif; }
-    h1 { font-size: 50px; }
-    a { color: #003366; text-decoration: none; font-weight: bold; }
+    .error-container {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .error-container h1 {
+      font-size: 6rem;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    .error-container h2 {
+      font-size: 2rem;
+      color: #555;
+    }
+
+    .error-container p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    .error-container .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 25px;
+      background-color: #003366;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .error-container .back-button:hover {
+      background-color: #ffcc00;
+      color: #003366;
+    }
+
+    .error-illustration {
+      max-width: 300px;
+      margin: 30px auto;
+    }
+
+    @media (max-width: 600px) {
+      .error-container h1 {
+        font-size: 4rem;
+      }
+      .error-container h2 {
+        font-size: 1.5rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>404</h1>
-  <p>Sorry, the page you're looking for isn't here.</p>
-  <p><a href="index.html">Return to Home</a></p>
+
+  <div class="error-container">
+    <h1>404</h1>
+    <h2>Oops! Page Not Found</h2>
+    <p>We can't seem to find the page you're looking for.<br>
+    Try returning to the homepage or reaching out through our contact section.</p>
+
+    <img src="https://images.unsplash.com/photo-1600376931516-223c3aab5b2b" alt="404 illustration" class="error-illustration" />
+
+    <br />
+    <a href="index.html" class="back-button">Back to Homepage</a>
+  </div>
+
 </body>
 </html>
