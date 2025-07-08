@@ -27,7 +27,6 @@ body {
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .menu-toggle {
   display: none;
   font-size: 1.5em;
@@ -37,15 +36,15 @@ body {
   border: none;
 }
 
+/* Desktop nav style */
 .top-bar nav {
   display: flex;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .top-bar nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -55,20 +54,8 @@ body {
   color: #ffcc00;
 }
 
+/* Mobile navigation */
 @media (max-width: 768px) {
-  .top-bar {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .logo-group {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
-
   .menu-toggle {
     display: block;
   }
@@ -90,26 +77,27 @@ body {
   }
 
   .top-bar nav a {
-    margin: 5px 0;
-    padding: 10px;
-    color: white;
+    margin: 8px 0;
+    padding: 10px 0;
+    border-top: 1px solid #003366;
   }
 }
 
-
+/* Header section */
 header {
   background-color: #003366;
   color: white;
   padding: 40px 20px;
   text-align: center;
 }
+
 header .mission-summary {
   font-size: 1rem;
   margin-top: 8px;
   color: #e0e0e0;
 }
 
-
+/* Sections */
 section {
   padding: 40px 20px;
   max-width: 900px;
@@ -130,6 +118,7 @@ section img {
   margin: 20px 0;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
@@ -143,6 +132,11 @@ footer a {
   text-decoration: underline;
 }
 
+/* Contact section */
+.contact-section {
+  text-align: center;
+}
+
 .social-icons a {
   margin: 0 10px;
   color: #003366;
@@ -150,29 +144,7 @@ footer a {
   font-size: 1.5em;
 }
 
-.contact-section {
-  text-align: center;
-}
-
-#back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #003366;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 1.2em;
-  cursor: pointer;
-  display: none;
-  z-index: 999;
-}
-
-#back-to-top:hover {
-  background: #ffcc00;
-  color: #003366;
-}
+/* Logo Group */
 .logo-group {
   display: flex;
   align-items: center;
@@ -194,6 +166,8 @@ footer a {
   font-style: italic;
   color: #ccc;
 }
+
+/* Insights */
 #insights {
   padding: 40px 20px;
   max-width: 900px;
@@ -235,6 +209,29 @@ footer a {
 .insight a:hover {
   text-decoration: underline;
 }
+
+/* Back to top button */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #003366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.2em;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+}
+
+#back-to-top:hover {
+  background: #ffcc00;
+  color: #003366;
+}
+
+/* Back button */
 .back-button {
   display: inline-block;
   margin-top: 30px;
