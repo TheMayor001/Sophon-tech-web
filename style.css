@@ -137,11 +137,60 @@ footer a {
   text-align: center;
 }
 
-.social-icons a {
+.contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.contact-item i {
+  color: #003366;
+  font-size: 1.2rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.contact-item a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+.contact-item.social-icons {
+  flex-direction: column;
+}
+
+.contact-item.social-icons span {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.social-links a {
   margin: 0 10px;
   color: #003366;
   text-decoration: none;
   font-size: 1.5em;
+}
+
+.social-links a:hover {
+  color: #ffcc00;
 }
 
 /* Logo Group */
@@ -247,4 +296,35 @@ footer a {
 .back-button:hover {
   background-color: #ffcc00;
   color: #003366;
+}
+
+.contact-methods {
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+.contact-methods p {
+  font-size: 1rem;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-methods i {
+  color: #003366;
+  font-size: 1.2rem;
+  min-width: 24px;
+  text-align: center;
+}
+
+.contact-methods a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-methods a:hover {
+  text-decoration: underline;
 }
