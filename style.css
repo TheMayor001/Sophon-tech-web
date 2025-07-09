@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -18,15 +19,46 @@ body {
   z-index: 1000;
 }
 
-.top-bar img.logo {
+/* Logo and Brand */
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+}
+
+.logo-link .logo {
   width: 80px;
   height: auto;
   background: white;
   border-radius: 12px;
   padding: 6px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
+.logo-link .logo-text {
+  color: white;
+  line-height: 1.2;
+}
+
+.logo-link .company-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.logo-link .tagline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Menu Toggle Button */
 .menu-toggle {
   display: none;
   font-size: 1.5em;
@@ -36,7 +68,7 @@ body {
   border: none;
 }
 
-/* Desktop nav style */
+/* Desktop Navigation */
 .top-bar nav {
   display: flex;
   gap: 1.5rem;
@@ -53,13 +85,13 @@ body {
 .top-bar nav a.active {
   color: #ffcc00;
 }
+
 .top-bar nav a.active {
   border-bottom: 2px solid #ffcc00;
   padding-bottom: 4px;
 }
 
-
-/* Mobile navigation */
+/* Mobile Navigation */
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -88,7 +120,7 @@ body {
   }
 }
 
-/* Header section */
+/* Header */
 header {
   background-color: #003366;
   color: white;
@@ -111,7 +143,6 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-
 
 section h2 {
   color: #003366;
@@ -137,7 +168,7 @@ footer a {
   text-decoration: underline;
 }
 
-/* Contact section */
+/* Contact Section */
 .contact-section {
   text-align: center;
 }
@@ -198,39 +229,7 @@ footer a {
   color: #ffcc00;
 }
 
-/* Logo Group */
-.logo-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-text {
-  color: white;
-  line-height: 1.2;
-}
-
-.company-name {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.tagline {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #ccc;
-}
-.logo-link {
-  display: flex;
-  align-items: center;
-}
-
-.logo-link img.logo {
-  display: block;
-}
-
-
-/* Insights */
+/* Insights Section */
 #insights {
   padding: 40px 20px;
   max-width: 900px;
@@ -273,7 +272,7 @@ footer a {
   text-decoration: underline;
 }
 
-/* Services Section */
+/* Services */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -311,7 +310,7 @@ footer a {
   color: #555;
 }
 
-/* Back to top button */
+/* Back to Top Button */
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -332,7 +331,7 @@ footer a {
   color: #003366;
 }
 
-/* Back button */
+/* Call-to-Action Button */
 .back-button {
   display: inline-block;
   margin-top: 30px;
@@ -350,6 +349,7 @@ footer a {
   color: #003366;
 }
 
+/* Contact methods left-aligned */
 .contact-methods {
   max-width: 500px;
   margin: 0 auto 20px auto;
@@ -380,4 +380,3 @@ footer a {
 .contact-methods a:hover {
   text-decoration: underline;
 }
-

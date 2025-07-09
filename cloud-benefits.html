@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic Page Setup -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Power of Cloud for Growing Businesses | Sophon Tech</title>
+
+  <!-- Main CSS File -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- === Top Navigation Bar === -->
   <div class="top-bar">
-    <div class="logo-group">
-      <img src="sophon_logo_web.png" alt="Sophon Tech Logo" class="logo" />
-      <div class="logo-text">
-        <span class="company-name">Sophon Tech Solutions</span><br />
-        <span class="tagline">Empower the Future: <em>Innovate, Connect, Scale</em></span>
+    <!-- Logo + Branding wrapped in link -->
+    <a href="index.html" class="logo-link">
+      <div class="logo-group">
+        <img src="sophon_logo_web.png" alt="Sophon Tech Logo" class="logo" />
+        <div class="logo-text">
+          <span class="company-name">Sophon Tech Solutions</span><br />
+          <span class="tagline">Empower the Future: <em>Innovate, Connect, Scale</em></span>
+        </div>
       </div>
-    </div>
+    </a>
+
+    <!-- Menu button for small screens -->
     <button class="menu-toggle" onclick="toggleMenu()">
       <i class="fas fa-bars"></i>
     </button>
+
+    <!-- Navigation links -->
     <nav id="nav-menu">
       <a href="index.html">Home</a>
       <a href="blog.html" class="active">Blog</a>
@@ -26,21 +37,28 @@
     </nav>
   </div>
 
+  <!-- === Page Header === -->
   <header>
     <h1>The Power of Cloud for Growing Businesses</h1>
-    <p class="mission-summary">How the cloud is transforming Kenyan SMEs and startups.</p>
+    <p class="mission-summary">
+      How the cloud is transforming Kenyan SMEs and startups.
+    </p>
   </header>
 
+  <!-- === Article Body === -->
   <section>
+    <!-- Introduction -->
     <p>
       In today's competitive landscape, businesses — especially in Kenya — are turning to cloud computing to reduce operational costs, increase scalability, and enhance agility. The cloud has become a powerful enabler for startups and SMEs that previously lacked access to enterprise-grade infrastructure.
     </p>
 
+    <!-- Section: Why Cloud -->
     <h2>Why the Cloud Matters</h2>
     <p>
       Traditional IT infrastructure is expensive to maintain and difficult to scale. Cloud platforms such as AWS, Azure, and Google Cloud offer a pay-as-you-go model, allowing companies to scale up (or down) as needed without massive upfront costs.
     </p>
 
+    <!-- Section: Benefits -->
     <h2>Benefits You Can Expect</h2>
     <ul>
       <li><strong>Cost Efficiency:</strong> Only pay for what you use.</li>
@@ -50,24 +68,28 @@
       <li><strong>Disaster Recovery:</strong> Your data is safe and backed up offsite.</li>
     </ul>
 
+    <!-- Section: Real Case Study -->
     <h2>Local Success Stories</h2>
     <p>
       Sophon Tech recently helped a Nairobi-based logistics startup migrate to the cloud, improving their application speed by 60% and reducing monthly IT costs by nearly half. These kinds of results are now possible for businesses across Kenya and East Africa.
     </p>
 
+    <!-- Section: Conclusion -->
     <h2>Final Thoughts</h2>
     <p>
       Embracing cloud technology is no longer optional — it’s a competitive advantage. At Sophon Tech, we guide you through every step of the transformation with strategy, training, and ongoing support.
     </p>
 
+    <!-- Back to Blog Button -->
     <a href="blog.html" class="back-button">← Back to Blog</a>
-
   </section>
 
+  <!-- === Footer === -->
   <footer>
     &copy; 2025 Sophon Tech Solutions | All Rights Reserved
   </footer>
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
