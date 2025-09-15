@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -235,7 +235,7 @@ footer a {
   max-width: 900px;
   margin: auto;
   background: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   margin-top: 40px;
 }
@@ -379,4 +379,113 @@ footer a {
 
 .contact-methods a:hover {
   text-decoration: underline;
+}
+/* Custom Properties (Variables) for consistent branding */
+:root {
+  --primary-color: #003366;
+  --secondary-color: #002244;
+  --accent-color: #ffcc00;
+  --text-color: #333;
+  --light-color: #f4f4f4;
+  --white-color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  color: var(--text-color);
+  background-color: var(--light-color);
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+h2 {
+  margin-top: 40px;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+/* Corrected Table CSS */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; /* This fixes the column widths */
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top; /* Aligns content to the top */
+}
+
+.pricing-table th:nth-child(1) {
+  width: 15%; /* Set a specific width for the 'Package' column */
+}
+
+.pricing-table th:nth-child(2) {
+  width: 25%; /* Set a specific width for the 'Ideal For' column */
+}
+
+.pricing-table th {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.pricing-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Call-to-action Section */
+.cta-section {
+  background-color: #f4f4f4;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+/* List item styles inside the table */
+.pricing-table ul {
+  padding-left: 20px;
+  margin: 0; /* Remove default margin for better alignment */
+}
+
+.pricing-table li {
+  margin-bottom: 5px; /* Add some space between list items */
+}
+.white-heading {
+  color: #ffffff;
 }
