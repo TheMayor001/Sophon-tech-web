@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) --->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H8QND96C4Y"
@@ -13,97 +13,164 @@
       }
       gtag("js", new Date());
 
+      // Both GA properties loaded properly
       gtag("config", "G-H8QND96C4Y");
+      gtag("config", "G-1Y3WLXZ48G");
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Insights – Sophon Tech Solutions</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#003366" />
+
+    <title>Sophon Tech Solutions | Smart Digital Solutions for Africa</title>
+    <meta
+      name="description"
+      content="Sophon Tech Solutions delivers innovative web, cloud, and SaaS products built in Kenya, serving Africa with cutting-edge technology."
+    />
+    <meta
+      name="keywords"
+      content="tech solutions Kenya, SaaS Africa, rental management software, Sophon Tech Solutions, web development Kenya, IT consultancy, SEO, cloud computing"
+    />
+    <meta name="author" content="Sophon Tech Solutions" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sophon Tech Solutions" />
+    <meta
+      property="og:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      property="og:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+    <meta property="og:url" content="https://sophontechsolutions.co.ke" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sophon Tech Solutions" />
+    <meta
+      name="twitter:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+
+    <link rel="icon" href="sophon_logo_web.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1Y3WLXZ48G"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <link rel="canonical" href="https://sophontechsolutions.co.ke/" />
+    <link
+      rel="preload"
+      href="Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="apple-touch-icon" href="sophon_logo_web.png" />
 
-      gtag("config", "G-1Y3WLXZ48G");
-    </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="top-bar">
-      <a href="index.html" class="logo-link">
-        <div class="logo-group">
-          <img src="sophon_logo_web.png" alt="Sophon Tech Logo" class="logo" />
-          <div class="logo-text">
-            <span class="company-name">Sophon Tech Solutions</span><br />
-            <span class="tagline"
-              >Empower the Future: <em>Innovate, Connect, Scale</em></span
+    <!-- NAVIGATION -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="sophon_logo_web.png" alt="Sophon logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">Sophon Tech Solutions</span>
+            <span class="brand-tag"
+              >Empower the Future — Innovate, Connect, Scale</span
             >
           </div>
-        </div>
-      </a>
+        </a>
 
-      <button class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </button>
+        <nav class="nav" id="primary-nav">
+          <a href="index.html#vision">Vision</a>
+          <a href="index.html#services">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html" class="active">Insights</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
 
-      <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="#articles" class="active">Blog</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </div>
-
-    <header>
-      <h1 class="white-heading">Insights & Articles</h1>
-      <p class="mission-summary">
-        Explore expert views, tech updates, and guides curated by Sophon Tech
-        Solutions.
-      </p>
+        <button id="nav-toggle" class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </header>
 
-    <section id="articles">
-      <h2>Latest Posts</h2>
-
-      <article class="insight">
-        <h3>The Power of Cloud for Growing Businesses</h3>
-        <p>
-          Learn how small and mid-sized companies in Kenya are using cloud
-          solutions to cut costs, increase agility, and compete on a global
-          scale.
+    <!-- HERO -->
+    <section class="hero slim">
+      <div class="container">
+        <h1>Insights & Articles</h1>
+        <p class="lead narrow" style="max-width: 700px; margin: auto">
+          Expert views, cloud innovations, security tips, and digital
+          transformation insights from Sophon Tech Solutions.
         </p>
-        <a href="cloud-benefits.html">Read Full Article →</a>
-      </article>
-
-      <article class="insight">
-        <h3>5 IT Security Mistakes to Avoid in 2025</h3>
-        <p>
-          Many SMEs unknowingly expose themselves to cyber threats. This guide
-          outlines key missteps and how to avoid them.
-        </p>
-        <a href="security-mistakes-2025.html">Read Full Article →</a>
-      </article>
-
-      <article class="insight">
-        <h3>Why Custom Software Gives You an Edge</h3>
-        <p>
-          Off-the-shelf software can only take you so far. See how tailored
-          applications drive performance, efficiency, and growth.
-        </p>
-        <a href="custom-software-advantage.html">Read Full Article →</a>
-      </article>
+      </div>
     </section>
 
-    <footer>&copy; 2025 Sophon Tech Solutions | All Rights Reserved</footer>
+    <!-- BLOG LISTING -->
+    <main>
+      <section class="section alt">
+        <div class="container narrow">
+          <h2>Latest Posts</h2>
+
+          <div class="insights-grid">
+            <article class="insight-card">
+              <h3>The Power of Cloud for Growing Businesses</h3>
+              <p>
+                How SMEs in Kenya are leveraging cloud infrastructure to cut
+                costs, improve efficiency, and expand faster.
+              </p>
+              <a href="cloud-benefits.html" class="read-link">Read more →</a>
+            </article>
+
+            <article class="insight-card">
+              <h3>5 IT Security Mistakes to Avoid in 2025</h3>
+              <p>
+                A breakdown of the most common vulnerabilities in Kenyan
+                businesses — and how to eliminate them effectively.
+              </p>
+              <a href="security-mistakes-2025.html" class="read-link"
+                >Read more →</a
+              >
+            </article>
+            <article class="insight-card">
+              <h3>Why Custom Software Gives You an Edge</h3>
+              <p>
+                Off-the-shelf tools limit growth. Learn how tailored systems
+                boost performance and reduce long-term cost.
+              </p>
+              <a href="custom-software-advantage.html" class="read-link"
+                >Read more →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-brand">
+          <img
+            src="sophon_logo_web.png"
+            alt="Sophon Logo"
+            class="footer-logo"
+          />
+          <span>© 2025 Sophon Tech Solutions | All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>

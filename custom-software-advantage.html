@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) - preserved (both IDs left intact) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H8QND96C4Y"
@@ -13,134 +13,194 @@
       }
       gtag("js", new Date());
 
+      // Both GA properties loaded properly
       gtag("config", "G-H8QND96C4Y");
-    </script>
-    <!-- Meta and Page Info -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Why Custom Software Gives You an Edge | Sophon Tech</title>
-
-    <!-- External CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1Y3WLXZ48G"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
       gtag("config", "G-1Y3WLXZ48G");
     </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#003366" />
+
+    <title>Sophon Tech Solutions | Smart Digital Solutions for Africa</title>
+    <meta
+      name="description"
+      content="Sophon Tech Solutions delivers innovative web, cloud, and SaaS products built in Kenya, serving Africa with cutting-edge technology."
+    />
+    <meta
+      name="keywords"
+      content="tech solutions Kenya, SaaS Africa, rental management software, Sophon Tech Solutions, web development Kenya, IT consultancy, SEO, cloud computing"
+    />
+    <meta name="author" content="Sophon Tech Solutions" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sophon Tech Solutions" />
+    <meta
+      property="og:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      property="og:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+    <meta property="og:url" content="https://sophontechsolutions.co.ke" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sophon Tech Solutions" />
+    <meta
+      name="twitter:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+
+    <link rel="icon" href="sophon_logo_web.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="canonical" href="https://sophontechsolutions.co.ke/" />
+    <link
+      rel="preload"
+      href="Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="apple-touch-icon" href="sophon_logo_web.png" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- === Top Navigation Bar === -->
-    <div class="top-bar">
-      <!-- Logo (wrapped in a future link if needed) -->
-      <a href="index.html" class="logo-link">
-        <div class="logo-group">
-          <img src="sophon_logo_web.png" alt="Sophon Tech Logo" class="logo" />
-          <div class="logo-text">
-            <span class="company-name">Sophon Tech Solutions</span><br />
-            <span class="tagline"
-              >Empower the Future: <em>Innovate, Connect, Scale</em></span
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="sophon_logo_web.png" alt="Sophon logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">Sophon Tech Solutions</span>
+            <span class="brand-tag"
+              >Empower the Future — Innovate, Connect, Scale</span
             >
           </div>
-        </div>
-      </a>
+        </a>
 
-      <!-- Hamburger Icon for Mobile View -->
-      <button class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </button>
+        <nav class="nav" id="primary-nav">
+          <a href="index.html#vision">Vision</a>
+          <a href="index.html#services">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html" class="active">Insights</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
 
-      <!-- Navigation Menu -->
-      <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="blog.html" class="active">Blog</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </div>
-
-    <!-- === Article Header Section === -->
-    <header>
-      <h1 class="white-heading">Why Custom Software Gives You an Edge</h1>
-      <p class="mission-summary">
-        Unlock business potential with tools built around your exact needs — not
-        the other way around.
-      </p>
+        <button id="nav-toggle" class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </header>
 
-    <!-- === Main Content Section === -->
-    <section>
-      <!-- Intro Paragraph -->
-      <p>
-        Many businesses start off using off-the-shelf software — and for basic
-        tasks, it works. But as your operations grow more complex, pre-built
-        solutions start to show their limits. That’s where custom software gives
-        you the edge.
-      </p>
-
-      <!-- Point 1 -->
-      <h2>Built for Your Workflow</h2>
-      <p>
-        Generic tools force your business to adapt to their structure. Custom
-        software is built around your actual workflow, saving time and improving
-        efficiency. From inventory systems to CRMs, the difference is real.
-      </p>
-
-      <!-- Point 2 -->
-      <h2>More Control and Flexibility</h2>
-      <p>
-        With custom solutions, you decide the features, logic, and integrations
-        — and you're not at the mercy of third-party update cycles or licensing
-        rules. That control translates to stability and growth.
-      </p>
-
-      <!-- Point 3 -->
-      <h2>Better Data & Decision Making</h2>
-      <p>
-        Custom systems can capture and analyze exactly the data you need.
-        Whether it's tracking customer behavior or optimizing delivery routes,
-        you get insights aligned to your business goals.
-      </p>
-
-      <!-- Point 4 -->
-      <h2>Security & Compliance</h2>
-      <p>
-        Tailored systems let you implement specific security measures and data
-        policies that match your industry requirements. No bloatware, fewer
-        vulnerabilities.
-      </p>
-
-      <!-- Point 5 -->
-      <h2>Investing in Growth</h2>
-      <p>
-        While custom software has an upfront cost, it pays back in saved time,
-        reduced errors, and a better customer experience. It grows with your
-        business — not against it.
-      </p>
-
-      <!-- Point 6 -->
-      <h2>Our Role</h2>
-      <p>
-        Sophon Tech designs and develops custom software for Kenyan businesses
-        ready to scale. From discovery to deployment, we build solutions that
-        work — and last.
-      </p>
-
-      <!-- Back Button -->
-      <a href="blog.html" class="back-button">← Back to Blog</a>
+    <!-- HERO -->
+    <section class="hero slim">
+      <div class="container narrow">
+        <h1>Why Custom Software Gives You an Edge</h1>
+        <p class="lead">
+          Unlock business potential with systems built around your exact
+          workflow — not the other way around.
+        </p>
+      </div>
     </section>
 
-    <!-- === Footer === -->
-    <footer>&copy; 2025 Sophon Tech Solutions | All Rights Reserved</footer>
+    <!-- ARTICLE CONTENT -->
+    <main>
+      <section class="section alt">
+        <div class="container narrow article-body">
+          <p>
+            Many businesses start off using pre-built software — and for basic
+            operations, it gets the job done. But as your workflow evolves and
+            your customer base grows, these generic tools begin to limit your
+            efficiency. This is where custom software becomes a strategic
+            advantage.
+          </p>
 
-    <!-- JavaScript File -->
+          <h2>Built for Your Workflow</h2>
+          <p>
+            Off-the-shelf software forces your business to adjust to its
+            structure. Custom software is the opposite — it adapts to your exact
+            processes, saving time, reducing errors, and improving productivity
+            across your teams.
+          </p>
+
+          <h2>More Control and Flexibility</h2>
+          <p>
+            With tailor-made solutions, you decide the features, how data flows,
+            and what integrations matter. You're no longer tied to licensing
+            restrictions or unpredictable third-party update cycles. This
+            stability allows you to scale confidently.
+          </p>
+
+          <h2>Better Data, Better Decision-Making</h2>
+          <p>
+            Custom systems capture and analyze the data that matters most to
+            you. Whether you’re tracking customer behavior, monitoring
+            inventory, or optimizing logistics, your insights are aligned with
+            your actual goals — not generic templates.
+          </p>
+
+          <h2>Security & Compliance by Design</h2>
+          <p>
+            Custom software lets you implement tighter, more relevant security
+            protocols. There’s no unnecessary bloatware, fewer vulnerabilities,
+            and full alignment with your industry’s compliance requirements.
+          </p>
+
+          <h2>An Investment That Scales</h2>
+          <p>
+            While custom software requires upfront investment, the long-term
+            benefits far outweigh the cost. You get:
+          </p>
+
+          <ul>
+            <li>More efficient workflows</li>
+            <li>Reduced repetitive manual tasks</li>
+            <li>Fewer system limitations</li>
+            <li>A better experience for your customers</li>
+          </ul>
+
+          <p>It grows with your business — not against it.</p>
+
+          <h2>Our Role</h2>
+          <p>
+            At Sophon Tech Solutions, we design and develop custom software for
+            businesses ready to scale in Kenya and across Africa. From discovery
+            and architecture to deployment and long-term support, we build
+            systems that work — and last.
+          </p>
+          <a href="blog.html" class="btn btn-outline">← Back to Insights</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-brand">
+          <img
+            src="sophon_logo_web.png"
+            alt="Sophon Logo"
+            class="footer-logo"
+          />
+          <span>© 2025 Sophon Tech Solutions | All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="script.js"></script>
   </body>
 </html>

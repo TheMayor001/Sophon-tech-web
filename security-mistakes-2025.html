@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <head>
+    <!-- Google tag (gtag.js) --->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H8QND96C4Y"
@@ -13,136 +14,183 @@
       }
       gtag("js", new Date());
 
+      // Both GA properties loaded properly
       gtag("config", "G-H8QND96C4Y");
-    </script>
-    <!-- Meta & Page Info -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>5 IT Security Mistakes to Avoid in 2025 | Sophon Tech</title>
-
-    <!-- External Styles -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1Y3WLXZ48G"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
       gtag("config", "G-1Y3WLXZ48G");
     </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#003366" />
+
+    <title>Sophon Tech Solutions | Smart Digital Solutions for Africa</title>
+    <meta
+      name="description"
+      content="Sophon Tech Solutions delivers innovative web, cloud, and SaaS products built in Kenya, serving Africa with cutting-edge technology."
+    />
+    <meta
+      name="keywords"
+      content="tech solutions Kenya, SaaS Africa, rental management software, Sophon Tech Solutions, web development Kenya, IT consultancy, SEO, cloud computing"
+    />
+    <meta name="author" content="Sophon Tech Solutions" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sophon Tech Solutions" />
+    <meta
+      property="og:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      property="og:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+    <meta property="og:url" content="https://sophontechsolutions.co.ke" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sophon Tech Solutions" />
+    <meta
+      name="twitter:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+
+    <link rel="icon" href="sophon_logo_web.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="canonical" href="https://sophontechsolutions.co.ke/" />
+    <link
+      rel="preload"
+      href="Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="apple-touch-icon" href="sophon_logo_web.png" />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <!-- === Top Navigation Bar === -->
-    <div class="top-bar">
-      <!-- Clickable Logo Redirects to Homepage -->
-      <a href="index.html" class="logo-link">
-        <div class="logo-group">
-          <img src="sophon_logo_web.png" alt="Sophon Tech Logo" class="logo" />
-          <div class="logo-text">
-            <span class="company-name">Sophon Tech Solutions</span><br />
-            <span class="tagline"
-              >Empower the Future: <em>Innovate, Connect, Scale</em></span
+    <!-- HEADER -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="sophon_logo_web.png" alt="Sophon logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">Sophon Tech Solutions</span>
+            <span class="brand-tag"
+              >Empower the Future — Innovate, Connect, Scale</span
             >
           </div>
-        </div>
-      </a>
+        </a>
 
-      <!-- Mobile Menu Toggle Icon -->
-      <button class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-      </button>
+        <nav class="nav" id="primary-nav">
+          <a href="index.html#vision">Vision</a>
+          <a href="index.html#services">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html" class="active">Insights</a>
+          <a href="index.html#contact" class="btn btn-ghost">Contact</a>
+        </nav>
 
-      <!-- Navigation Links -->
-      <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="blog.html" class="active">Blog</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
-    </div>
-
-    <!-- === Page Header === -->
-    <header>
-      <h1 class="white-heading">5 IT Security Mistakes to Avoid in 2025</h1>
-      <p class="mission-summary">
-        Cyber threats are evolving. Don’t let these common mistakes put your
-        business at risk.
-      </p>
+        <button id="nav-toggle" class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </header>
 
-    <!-- === Main Article Content === -->
-    <section>
-      <!-- Intro Paragraph -->
-      <p>
-        As businesses adopt more digital tools and cloud services, the risks to
-        their IT systems continue to grow. At Sophon Tech, we see too many
-        businesses — especially small and mid-sized ones — making critical
-        security errors that expose them to data loss, breaches, and
-        reputational harm.
-      </p>
-
-      <!-- Tip 1 -->
-      <h2>1. Weak or Reused Passwords</h2>
-      <p>
-        Using the same password across multiple systems is one of the biggest
-        security risks. In 2025, password attacks are becoming more automated
-        and aggressive. Always enforce strong password policies and encourage
-        the use of password managers and two-factor authentication (2FA).
-      </p>
-
-      <!-- Tip 2 -->
-      <h2>2. Ignoring Software Updates</h2>
-      <p>
-        Outdated software, operating systems, and plugins are prime targets for
-        attackers. Regular updates and patch management should be part of your
-        IT routine — not an afterthought.
-      </p>
-
-      <!-- Tip 3 -->
-      <h2>3. No Employee Cybersecurity Training</h2>
-      <p>
-        Most breaches start with human error. Train your team to spot phishing
-        emails, use secure connections, and follow your company’s data policies.
-        Security is everyone's job.
-      </p>
-
-      <!-- Tip 4 -->
-      <h2>4. Poor Backup Practices</h2>
-      <p>
-        If ransomware hits your system and you don’t have a clean, recent
-        backup, your options become very limited. Set up regular, automatic,
-        encrypted backups — and test them often.
-      </p>
-
-      <!-- Tip 5 -->
-      <h2>5. Assuming “It Won’t Happen to Us”</h2>
-      <p>
-        Cyber attacks target small businesses too. In fact, they often lack the
-        protections that larger organizations have. Don’t wait for an incident
-        to start thinking about your cybersecurity posture.
-      </p>
-
-      <!-- Final Takeaway -->
-      <h2>Final Advice</h2>
-      <p>
-        A strong IT security foundation doesn’t need to be expensive — just
-        intentional. At Sophon Tech, we help businesses assess vulnerabilities,
-        set up security frameworks, and stay protected.
-      </p>
-
-      <!-- Back Button -->
-      <a href="blog.html" class="back-button">← Back to Blog</a>
+    <!-- HERO -->
+    <section class="hero slim">
+      <div class="container narrow">
+        <h1>5 IT Security Mistakes to Avoid in 2025</h1>
+        <p class="lead">
+          Cyber threats are evolving — make sure your business isn't an easy
+          target.
+        </p>
+      </div>
     </section>
 
-    <!-- === Footer Section === -->
-    <footer>&copy; 2025 Sophon Tech Solutions | All Rights Reserved</footer>
+    <!-- ARTICLE CONTENT -->
+    <main>
+      <section class="section alt">
+        <div class="container narrow article-body">
+          <p>
+            As more businesses adopt cloud platforms, mobile tools, and online
+            operations, cyber threats continue to rise. Many Kenyan SMEs still
+            underestimate the risks — and end up making avoidable mistakes that
+            expose them to data loss, ransomware attacks, and financial damage.
+          </p>
 
-    <!-- Scripts -->
+          <h2>1. Weak or Reused Passwords</h2>
+          <p>
+            One-password-for-everything is a major risk. In 2025, automated
+            credential attacks are more advanced than ever. Encourage strong
+            passwords, enforce rotation cycles, and use 2FA wherever possible.
+          </p>
+
+          <h2>2. Ignoring Software Updates</h2>
+          <p>
+            Outdated systems are easy entry points for attackers. Regular
+            patches should be part of your routine — especially for firewalls,
+            routers, CMS platforms, and business apps.
+          </p>
+
+          <h2>3. No Employee Cybersecurity Training</h2>
+          <p>
+            Most breaches originate from human error. Staff must know how to
+            identify phishing emails, avoid unsafe links, secure their devices,
+            and follow data policies. Training pays for itself.
+          </p>
+
+          <h2>4. Poor Backup Practices</h2>
+          <p>
+            Ransomware remains a major threat in East Africa. Without reliable,
+            frequent, and encrypted backups, recovery becomes expensive — or
+            impossible. Test your backups regularly.
+          </p>
+
+          <h2>5. Assuming “We’re Too Small to Be Targeted”</h2>
+          <p>
+            Cybercriminals increasingly target small businesses because they
+            tend to have weaker defenses. Size is not protection. A proactive
+            security strategy is essential.
+          </p>
+
+          <h2>Final Advice</h2>
+          <p>
+            Security doesn’t need to be complicated — it needs to be
+            intentional. Sophon Tech Solutions helps companies assess
+            vulnerabilities, implement safeguards, and protect their digital
+            assets.
+          </p>
+
+          <a href="blog.html" class="btn btn-outline">← Back to Insights</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-brand">
+          <img
+            src="sophon_logo_web.png"
+            alt="Sophon Logo"
+            class="footer-logo"
+          />
+          <span>© 2025 Sophon Tech Solutions | All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
     <script src="script.js"></script>
   </body>
 </html>

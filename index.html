@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) --->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-H8QND96C4Y"
@@ -13,10 +13,14 @@
       }
       gtag("js", new Date());
 
+      // Both GA properties loaded properly
       gtag("config", "G-H8QND96C4Y");
+      gtag("config", "G-1Y3WLXZ48G");
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#003366" />
 
     <title>Sophon Tech Solutions | Smart Digital Solutions for Africa</title>
     <meta
@@ -28,6 +32,8 @@
       content="tech solutions Kenya, SaaS Africa, rental management software, Sophon Tech Solutions, web development Kenya, IT consultancy, SEO, cloud computing"
     />
     <meta name="author" content="Sophon Tech Solutions" />
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Sophon Tech Solutions" />
     <meta
       property="og:description"
@@ -51,235 +57,310 @@
     />
 
     <link rel="icon" href="sophon_logo_web.png" type="image/png" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-1Y3WLXZ48G"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+    <link rel="canonical" href="https://sophontechsolutions.co.ke/" />
+    <link
+      rel="preload"
+      href="Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="apple-touch-icon" href="sophon_logo_web.png" />
 
-      gtag("config", "G-1Y3WLXZ48G");
-    </script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="top-bar">
-      <a href="index.html" class="logo-link" style="text-decoration: none">
-        <div class="logo-group">
-          <img src="sophon_logo_web.png" alt="Sophon Tech Logo" class="logo" />
-          <div class="logo-text">
-            <span class="company-name">Sophon Tech Solutions</span><br />
-            <span class="tagline"
-              >Empower the Future: Innovate, Connect, Scale.</span
+    <a id="top"></a>
+
+    <!-- NAV -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Sophon Tech Solutions home"
+        >
+          <img
+            src="sophon_logo_web.png"
+            alt="Sophon logo"
+            class="brand-logo"
+            loading="lazy"
+          />
+
+          <div class="brand-text">
+            <span class="brand-title">Sophon Tech Solutions</span>
+            <span class="brand-tag"
+              >Empower the Future — Innovate, Connect, Scale</span
             >
           </div>
-        </div>
-      </a>
+        </a>
 
-      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav class="nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#vision">Vision</a>
+          <a href="#services">Services</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="blog.html">Insights</a>
+          <a href="#contact">Contact</a>
+        </nav>
 
-      <nav id="nav-menu">
-        <a href="#vision">Vision</a>
-        <a href="#services">Services</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="blog.html">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-
-    <header>
-      <h1 class="white-heading">Sophon Tech Solutions</h1>
-      <p>Empower the Future: Innovate, Connect, Scale.</p>
-      <p class="mission-summary">
-        Helping businesses in Kenya and beyond grow with scalable cloud systems,
-        modern software, and expert IT consultancy.
-      </p>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+          <span class="sr-only">Open menu</span>
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
     </header>
 
-    <section id="vision">
-      <p>
-        At Sophon Tech Solutions, we believe in the transformative power of
-        technology. Our mission is to empower businesses across Africa with
-        cutting-edge cloud solutions, custom software development, and strategic
-        IT consultancy. We are committed to driving digital transformation that
-        enables our clients to innovate, connect, and scale their operations
-        effectively.
-      </p>
-      <h2>Our Vision</h2>
-      <img
-        src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
-        alt="Cloud technology vision illustration"
-      />
-      <p>
-        Sophon envisions a future where cloud computing transcends traditional
-        boundaries — empowering African businesses to innovate faster, scale
-        smarter, and operate more securely in a connected digital world. Our
-        goal is to democratize access to modern technology so that every
-        enterprise, from startups to large institutions, can thrive in the
-        digital era.
-      </p>
-    </section>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Smart digital solutions for Africa</h1>
+          <p class="lead">
+            We build cloud platforms, SaaS products and bespoke software that
+            help businesses innovate, connect and scale—from Mombasa to the
+            continent.
+          </p>
+          <div class="hero-ctas">
+            <a href="#services" class="btn btn-primary">Our Services</a>
+            <a href="pricing.html" class="btn btn-outline">Pricing</a>
+          </div>
 
-    <section id="mission">
-      <h2>Our Mission</h2>
-      <img
-        src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1000&q=80"
-        alt="Empowering technology mission"
-      />
+          <ul class="hero-features">
+            <li>Cloud infrastructure & migrations</li>
+            <li>Custom software & SaaS development</li>
+            <li>IT strategy, security & support</li>
+          </ul>
+        </div>
 
-      <p>
-        At Sophon Tech Solutions, our mission is to empower businesses with
-        smart, scalable, and secure technology solutions that unlock growth and
-        accelerate digital transformation. We are committed to helping
-        organizations in Kenya and beyond thrive in a rapidly evolving digital
-        landscape — by delivering practical innovation, exceptional service, and
-        lasting impact.
-      </p>
-    </section>
-
-    <section id="services">
-      <h2>What We Offer</h2>
-      <p>
-        We provide more than just IT solutions — we deliver the tools that drive
-        transformation. From cloud infrastructure to custom software and expert
-        consulting, our services are built to empower growth, improve
-        efficiency, and future-proof your business.
-      </p>
-      <p>Core Services:</p>
-      <div class="service-grid">
-        <div class="service-card">
-          <i class="fas fa-cloud"></i>
-          <h3>Cloud Solutions</h3>
-          <p>
-            Deploy scalable and secure cloud infrastructure tailored for growth.
-          </p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-code"></i>
-          <h3>Software Development</h3>
-          <p>
-            Custom apps, websites and systems to streamline operations and
-            deliver results.
-          </p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-briefcase"></i>
-          <h3>IT Consultancy</h3>
-          <p>
-            Expert advice and strategies for digital transformation success.
-          </p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-network-wired"></i>
-          <h3>Networking & Security</h3>
-          <p>
-            Integrated systems with strong security and seamless connectivity.
-          </p>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-chalkboard-teacher"></i>
-          <h3>Tech Training</h3>
-          <p>Up skill your team with hands-on tech training and workshops.</p>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Replace with an illustration or screenshot if available -->
+          <img
+            src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?auto=format&fit=crop&w=1200&q=80"
+            alt="Cloud and infrastructure illustration"
+          />
         </div>
       </div>
     </section>
 
-    <section id="why">
-      <h2>Why Choose Us?</h2>
-      <p>Because your success is our mission.</p>
-      <p>
-        At Sophon Tech Solutions, we combine deep technical expertise with a
-        client-first mindset to deliver solutions that are innovative, scalable,
-        and built to last.
-      </p>
+    <!-- INTRO / MISSION -->
+    <main>
+      <section id="vision" class="section">
+        <div class="container vision-grid">
+          <div>
+            <h2>Our Vision</h2>
+            <p>
+              Sophon envisions a future where modern cloud technology empowers
+              African businesses to innovate faster, scale smarter, and operate
+              more securely.
+            </p>
+            <p>
+              We democratize access to modern tech — helping startups, SMEs and
+              institutions build reliable systems that deliver measurable
+              outcomes.
+            </p>
+          </div>
 
-      <p>What sets us apart:</p>
-      <ul>
-        <li>Client-Centered Approach</li>
-        <li>Cutting-Edge Technologies</li>
-        <li>Reliable Support & Maintenance</li>
-        <li>Flexible & Scalable Solutions</li>
-      </ul>
-      <a href="#contact" class="back-button">Contact Us Now</a>
-    </section>
-
-    <section id="insights">
-      <h2>Insights & Resources</h2>
-
-      <article class="insight">
-        <h3>The Power of Cloud for Growing Businesses</h3>
-        <p>
-          Learn how small and mid-sized companies in Kenya are using cloud
-          solutions to cut costs, increase agility, and compete on a global
-          scale.
-        </p>
-        <a href="cloud-benefits.html">Read More →</a>
-      </article>
-
-      <article class="insight">
-        <h3>5 IT Security Mistakes to Avoid in 2025</h3>
-        <p>
-          Many SMEs unknowingly expose themselves to cyber threats. This guide
-          outlines key missteps and how to avoid them.
-        </p>
-        <a href="security-mistakes-2025.html">Read More →</a>
-      </article>
-
-      <article class="insight">
-        <h3>Why Custom Software Gives You an Edge</h3>
-        <p>
-          Off-the-shelf software can only take you so far. See how tailored
-          applications drive performance, efficiency, and growth.
-        </p>
-        <a href="custom-software-advantage.html">Read More →</a>
-      </article>
-    </section>
-
-    <section id="contact" class="contact-section">
-      <h2>Get in Touch</h2>
-
-      <div class="contact-card">
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:sophontechsolutions@gmail.com"
-            >sophontechsolutions@gmail.com</a
-          >
+          <img src="vision.jpg" alt="Modern cloud technology" loading="lazy" />
         </div>
+      </section>
 
-        <div class="contact-item">
-          <i class="fas fa-phone"></i>
-          <a href="tel:+254742315191">+254 742 315191</a>
-        </div>
+      <!-- SERVICES -->
+      <section id="services" class="section alt">
+        <div class="container">
+          <h2>What we offer</h2>
+          <p class="muted">
+            Practical services focused on growth, reliability and security.
+          </p>
 
-        <div class="contact-item">
-          <i class="fas fa-globe"></i>
-          <a href="https://sophontechsolutions.co.ke" target="_blank"
-            >sophontechsolutions.co.ke</a
-          >
-        </div>
+          <div class="services-grid">
+            <article class="card">
+              <div class="card-icon"><i class="fas fa-cloud"></i></div>
+              <h3>Cloud Solutions</h3>
+              <p>
+                Scalable, secure cloud infrastructure — migrations, architecture
+                and managed services.
+              </p>
+            </article>
 
-        <div class="contact-item social-icons">
-          <span><i class="fas fa-share-alt"></i> Follow us:</span>
-          <div class="social-links">
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+            <article class="card">
+              <div class="card-icon"><i class="fas fa-code"></i></div>
+              <h3>Software Development</h3>
+              <p>
+                Custom web and mobile apps, APIs and integrations tailored to
+                your business workflows.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon"><i class="fas fa-briefcase"></i></div>
+              <h3>IT Consultancy</h3>
+              <p>
+                Strategy, audits and governance that align tech investments to
+                business outcomes.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3>Security & Networking</h3>
+              <p>
+                Secure-by-design systems, network architecture and operational
+                security practices.
+              </p>
+            </article>
+
+            <article class="card">
+              <div class="card-icon">
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <h3>Tech Training</h3>
+              <p>
+                Workshops and practical training to upskill teams on cloud, dev
+                practices and security.
+              </p>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <footer>&copy; 2025 Sophon Tech Solutions | All Rights Reserved</footer>
+      <!-- WHY -->
+      <section id="why" class="section">
+        <div class="container grid-2">
+          <!-- Left column: Features list -->
+          <div>
+            <h2>Why choose Sophon</h2>
+            <p class="muted">
+              We combine engineering discipline with a client-first approach.
+            </p>
+
+            <ul class="checklist">
+              <li>Client-centered delivery and SLAs</li>
+              <li>Modern technologies with pragmatic design</li>
+              <li>Local presence, continental ambition</li>
+              <li>Reliable support & maintenance</li>
+            </ul>
+          </div>
+
+          <!-- Right column: Value statement + CTA -->
+          <div>
+            <p>
+              We build systems designed to reduce operational risk and increase
+              velocity. Our teams focus on delivering measurable value quickly —
+              then scale safely with you.
+            </p>
+
+            <a href="#contact" class="btn btn-primary" style="margin-top: 20px">
+              Speak with us
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSIGHTS -->
+      <section id="insights" class="section alt">
+        <div class="container">
+          <h2>Insights & resources</h2>
+
+          <div class="insights-grid">
+            <article class="insight-card">
+              <h3>The Power of Cloud for Growing Businesses</h3>
+              <p>
+                How SMEs in Kenya are using cloud to cut costs, improve agility
+                and expand market reach.
+              </p>
+              <a href="cloud-benefits.html" class="read-link">Read more →</a>
+            </article>
+
+            <article class="insight-card">
+              <h3>5 IT Security Mistakes to Avoid in 2025</h3>
+              <p>
+                Common exposures for SMEs and practical controls you can
+                implement today.
+              </p>
+              <a href="security-mistakes-2025.html" class="read-link"
+                >Read more →</a
+              >
+            </article>
+
+            <article class="insight-card">
+              <h3>Why Custom Software Gives You an Edge</h3>
+              <p>
+                When to build, when to buy and how to keep maintenance
+                manageable.
+              </p>
+              <a href="custom-software-advantage.html" class="read-link"
+                >Read more →</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h2 class="center">Get in Touch</h2>
+
+        <div class="contact-card contact-classic">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sophontechsolutions@gmail.com">
+              sophontechsolutions@gmail.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <a href="tel:+254742315191">+254 742 315191</a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-globe"></i>
+            <a
+              href="https://sophontechsolutions.co.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              sophontechsolutions.co.ke
+            </a>
+          </div>
+
+          <div class="contact-item social-icons">
+            <span><i class="fas fa-share-alt"></i> Follow us:</span>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-brand">
+          <img
+            src="sophon_logo_web.png"
+            alt="Sophon Logo"
+            class="footer-logo"
+          />
+          <span>© 2025 Sophon Tech Solutions | All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="back-to-top"
+      class="back-to-top"
+      title="Back to top"
+      aria-label="Back to top"
+    >
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
