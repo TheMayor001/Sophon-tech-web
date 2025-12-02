@@ -315,6 +315,14 @@ li {
   align-items: center;
   margin-top: 20px;
 }
+@media (max-width: 768px) {
+  .vision-grid {
+    grid-template-columns: 1fr;
+  }
+  .vision-grid img {
+    order: 2; /* keep image below text on mobile */
+  }
+}
 
 /* ===========================
    Services
@@ -322,7 +330,7 @@ li {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   margin-top: 32px;
 }
@@ -360,11 +368,121 @@ li {
   margin: 0;
 }
 
+.card {
+  position: relative;
+  overflow: hidden; /* ensures the strip stays inside rounded corners */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px; /* height of the strip */
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: var(--accent-1); /* temporary default */
+}
+.insight-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.insight-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: var(--accent-1); /* default */
+}
+.pricing-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: var(--accent-1); /* default */
+}
+.hosting-grid > .pricing-card::before {
+  background: var(--accent-5);
+}
+
+:root {
+  --accent-1: #003366; /* navy */
+  --accent-2: #005f73; /* teal */
+  --accent-3: #9b2226; /* red */
+  --accent-4: #ee9b00; /* orange */
+  --accent-5: #0a9396; /* aqua */
+}
+/* Different colours per service card */
+.services-grid .card:nth-child(1)::before {
+  background: var(--accent-1);
+}
+
+.services-grid .card:nth-child(2)::before {
+  background: var(--accent-2);
+}
+
+.services-grid .card:nth-child(3)::before {
+  background: var(--accent-3);
+}
+
+.services-grid .card:nth-child(4)::before {
+  background: var(--accent-4);
+}
+
+.services-grid .card:nth-child(5)::before {
+  background: var(--accent-5);
+}
+/* Different colours per insight */
+.insights-grid .insight-card:nth-child(1)::before {
+  background: var(--accent-3);
+}
+.insights-grid .insight-card:nth-child(2)::before {
+  background: var(--accent-4);
+}
+.insights-grid .insight-card:nth-child(3)::before {
+  background: var(--accent-5);
+}
+/* Different colours for each pricing tier */
+.pricing-grid .pricing-card:nth-child(1)::before {
+  background: var(--accent-2);
+}
+.pricing-grid .pricing-card:nth-child(2)::before {
+  background: var(--accent-3);
+}
+.pricing-grid .pricing-card:nth-child(3)::before {
+  background: var(--accent-4);
+}
 /* Responsive */
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
     gap: 22px;
+  }
+}
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
   }
 }
 
