@@ -121,3 +121,31 @@ function activateMenu() {
 }
 
 window.addEventListener("scroll", activateMenu);
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("quoteForm");
+  const status = document.getElementById("form-status");
+  
+  if (!form) return;
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { Accept: "application/json" }
+    });
+
+    if (response.ok) {
+      status.textContent = "Thank you! We’ll contact you shortly.";
+      status.style.display = "block";
+      status.style.color = "green";
+      form.reset();
+    } else {
+      status.textContent = "Something went wrong. Please try again.";
+      status.style.display = "block";
+      status.style.color = "red";
+    }
+  });
+});

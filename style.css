@@ -650,6 +650,19 @@ li {
   }
 }
 
+.submit-btn {
+  width: 260px; /* same width as other main CTA buttons */
+  display: block;
+  margin: 20px auto 0; /* auto centers horizontally */
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 8px; /* Optional: matches your UI style */
+}
+.submit-btn {
+  border: none; /* Remove border */
+  outline: none; /* Remove focus ring */
+}
+
 /* ===========================
    SEO section — force 2 columns on desktop
    =========================== */
@@ -785,6 +798,54 @@ li {
 }
 .contact-card.contact-classic .social-links a:hover {
   color: var(--accent);
+}
+/* ===========================
+   QUOTE FORM STYLING
+   =========================== */
+
+.quote-form-container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+  margin-top: 32px;
+}
+
+.quote-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.quote-form-container input,
+.quote-form-container select,
+.quote-form-container textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #d0d6dd;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.quote-form-container textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.quote-form-container input:focus,
+.quote-form-container select:focus,
+.quote-form-container textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 51, 102, 0.15);
+}
+
+#form-status {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 /*===========================

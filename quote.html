@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) --->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-H8QND96C4Y"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      // Both GA properties loaded properly
+      gtag("config", "G-H8QND96C4Y");
+      gtag("config", "G-1Y3WLXZ48G");
+    </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#003366" />
+
+    <title>Request Custom Quote | Sophon Tech Solutions</title>
+    <meta
+      name="description"
+      content="Sophon Tech Solutions delivers innovative web, cloud, and SaaS products built in Kenya, serving Africa with cutting-edge technology."
+    />
+    <meta
+      name="keywords"
+      content="tech solutions Kenya, SaaS Africa, rental management software, Sophon Tech Solutions, web development Kenya, IT consultancy, SEO, cloud computing"
+    />
+    <meta name="author" content="Sophon Tech Solutions" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sophon Tech Solutions" />
+    <meta
+      property="og:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      property="og:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+    <meta property="og:url" content="https://sophontechsolutions.co.ke" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sophon Tech Solutions" />
+    <meta
+      name="twitter:description"
+      content="Smart Tech Solutions for Africa – Web, Cloud & SaaS."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sophontechsolutions.co.ke/favicon.png"
+    />
+
+    <link rel="icon" href="sophon_logo_web.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="canonical" href="https://sophontechsolutions.co.ke/" />
+    <link
+      rel="preload"
+      href="Inter.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="apple-touch-icon" href="sophon_logo_web.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html">
+          <img src="sophon_logo_web.png" alt="Sophon logo" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">Sophon Tech Solutions</span>
+            <span class="brand-tag"
+              >Empower the Future — Innovate, Connect, Scale</span
+            >
+          </div>
+        </a>
+
+        <nav class="nav" id="primary-nav">
+          <a href="index.html#vision">Vision</a>
+          <a href="index.html#services">Services</a>
+          <a href="pricing.html" class="active">Pricing</a>
+          <a href="blog.html">Insights</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <button id="nav-toggle" class="nav-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <section class="section narrow">
+      <h2 class="center">Request a Custom Quote</h2>
+      <p class="center muted">
+        Tell us about your project — we'll get back to you shortly.
+      </p>
+
+      <div class="quote-form-container">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="quoteForm"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="e21ab36f-f136-4cc9-b36a-ea102fa4449e"
+          />
+
+          <input type="text" name="name" placeholder="Full Name *" required />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address *"
+            required
+          />
+          <input type="text" name="company" placeholder="Company (optional)" />
+          <input type="tel" name="phone" placeholder="Phone (optional)" />
+
+          <select name="budget" required>
+            <option value="">Estimated Budget *</option>
+            <option value="Below 50,000 KES">Below 50,000 KES</option>
+            <option value="50,000 — 150,000 KES">50,000 — 150,000 KES</option>
+            <option value="150,000 — 300,000 KES">150,000 — 300,000 KES</option>
+            <option value="300,000+ KES">300,000+ KES</option>
+          </select>
+
+          <textarea
+            name="message"
+            placeholder="Project Details *"
+            required
+          ></textarea>
+
+          <input type="checkbox" name="botcheck" style="display: none" />
+          <button type="submit" class="btn btn-primary submit-btn">
+            Submit Request
+          </button>
+        </form>
+
+        <p id="form-status"></p>
+      </div>
+    </section>
+
+    <!-- Optional: include footer to remain consistent -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-brand">
+          <img src="sophon_logo_web.png" class="footer-logo" alt="" />
+          <span>© 2025 Sophon Tech Solutions | All Rights Reserved</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
